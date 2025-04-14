@@ -1,0 +1,15 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+h1, h2 {
+    color: #b81d24; /* Honda kırmızısı */
+}
+nav a {
+    margin: 0 10px;
+}
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
