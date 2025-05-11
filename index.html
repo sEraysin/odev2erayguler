@@ -2,31 +2,75 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honda Dünyası - Ana Sayfa</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Pages/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Honda Dünyasına Hoş Geldiniz!</h1>
-        <nav>
-            <a href="index.html">Ana Sayfa</a> |
-            <a href="Pages/hakkimizda.html">Hakkımızda</a> |
-            <a href="Pages/modeller.html">Modeller</a> |
-            <a href="Pages/servis.html">Servis</a> |
-            <a href="Pages/iletisim.html">İletişim</a> |
-            <a href="Pages/galeri.html">Galeri</a> |
-            <a href="Pages/yorumlar.html">Yorumlar</a>
-        </nav>
+        <div class="header-content">
+            <img src="Pages/images/honda-logo.jpg" alt="Honda Logosu" class="logo">
+            <h1>Honda Dünyasına Hoş Geldiniz!</h1>
+            <nav>
+                <a href="index.html">Ana Sayfa</a>
+                <a href="Pages/hakkimizda.html">Hakkımızda</a>
+                <a href="Pages/modeller.html">Modeller</a>
+                <a href="Pages/servis.html">Servis</a>
+                <a href="Pages/iletisim.html">İletişim</a>
+                
+                <a href="Pages/yorumlar.html">Yorumlar</a>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <h2>Honda ile Tanışın</h2>
-        <img src="Pages/images/honda-logo.jpg" alt="Honda Logosu" width="300">
-        <p>
-            Honda, 1948 yılında Soichiro Honda tarafından kurulan ve otomotiv sektöründe yenilikçi yaklaşımlarıyla tanınan bir Japon markasıdır. Yıllar içinde güvenilirlik, performans ve çevre dostu teknolojilerle adını dünyaya duyurmuştur. Civic, Accord, CR-V gibi modelleriyle her kesime hitap eden Honda, sürüş keyfini teknolojiyle birleştirir. Türkiye’de de geniş bir kullanıcı kitlesine sahip olan marka, yakıt verimliliği ve dayanıklılığıyla öne çıkar. Bayimiz, size en iyi Honda deneyimini sunmak için burada! Her modelde kaliteyi hissedebilir, servis hizmetlerimizle aracınızın ömrünü uzatabilirsiniz. Honda’nın felsefesi, insana saygı ve çevre bilincidir. Bu yüzden hibrit ve elektrikli araçlarıyla da geleceği şekillendiriyor. Siz de Honda ailesine katılmak için doğru yerdesiniz!
-        </p>
+        <section class="intro-section">
+            <h2>Honda ile Sürüş Keyfini Keşfedin</h2>
+            <div class="section-content">
+                <img src="Pages/images/PROLOGUE-01_i.webp" alt="Honda Showroom" class="section-img">
+                <div class="text-content">
+                    <p>Honda, 1948 yılında Soichiro Honda tarafından kurulan, otomotiv sektöründe yenilikçi ve çevre dostu teknolojileriyle tanınan bir Japon markasıdır. Civic, Accord ve CR-V gibi modelleriyle her kesime hitap eden Honda, güvenilirlik ve performans sunar.</p>
+                    <p>Türkiye’de geniş bir kullanıcı kitlesine sahip olan markamız, yakıt verimliliği ve dayanıklılığıyla öne çıkar. Bayimiz, size en iyi Honda deneyimini sunmak için burada! Hibrit ve elektrikli araçlarımızla geleceği şekillendiriyoruz.</p>
+                    <p>Siz de Honda ailesine katılmak için doğru yerdesiniz! Showroom’umuzda modellerimizi keşfedebilir, test sürüşü ile farkı hissedebilirsiniz.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="models-section">
+            <h2>Öne Çıkan Modellerimiz</h2>
+            <div class="models-grid">
+                <div class="model-card">
+                    <img src="Pages/images/civic.jpg" alt="Honda Civic" class="model-img">
+                    <h3>Civic</h3>
+                    <p>Sportif tasarım ve 1.5L Turbo motor ile genç ve dinamik sürücüler için ideal.</p>
+                    <p><strong>Fiyat:</strong> 1.200.000 TL</p>
+                </div>
+                <div class="model-card">
+                    <img src="Pages/images/accord.jpg" alt="Honda Accord" class="model-img">
+                    <h3>Accord</h3>
+                    <p>2.0L Hibrit motoru ile lüks ve konfor arayanlar için mükemmel bir seçim.</p>
+                    <p><strong>Fiyat:</strong> 1.800.000 TL</p>
+                </div>
+                <div class="model-card">
+                    <img src="Pages/images/cr-v.jpg" alt="Honda CR-V" class="model-img">
+                    <h3>CR-V</h3>
+                    <p>Geniş iç hacmi ve 1.5L Turbo motoru ile aileler için ideal SUV.</p>
+                    <p><strong>Fiyat:</strong> 2.000.000 TL</p>
+                </div>
+            </div>
+            <button id="test-drive-btn">Test Sürüşü Talep Et</button>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Honda Dünyası. Tüm hakları saklıdır.</p>
+        <div class="footer-content">
+            <img src="Pages/images/Honda-Emblem.png" alt="Honda Footer" class="footer-img">
+            <p>&copy; 2025 Honda Dünyası. Tüm hakları saklıdır.</p>
+            <p>Bize ulaşın: <a href="Pages/iletisim.html">İletişim Formu</a> | Telefon: 0212 123 45 67</p>
+            <p>Adres: Honda Dünyası Bayi, İstanbul, Türkiye</p>
+        </div>
     </footer>
+
+    <script src="Pages/script.js"></script>
 </body>
 </html>
